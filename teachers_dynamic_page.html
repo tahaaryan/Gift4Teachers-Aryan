@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gift4Teachers - M.Taha</title>
+    <style>
+        body {
+            font-family: "Vazirmatn", sans-serif;
+            background: linear-gradient(to bottom right, #fff7e6, #e0f7fa);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #0f172a;
+        }
+        .menu {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .menu button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .menu button:hover {
+            background: #0369a1;
+        }
+        .content {
+            margin-top: 40px;
+            display: none;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .teacher-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        .teacher-message {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gift4Teachers – M.Taha</h1>
+    <p>با افتخار و عشق، این صفحه تقدیم به همه معلمان گرامی مدرسه در روز معلم.</p>
+    <div class="menu">
+<button onclick="showTeacher('bardia')">بردیا دوستی (ریاضی)</button>
+<button onclick="showTeacher('sadegh')">صادق ولی زاده (فارسی)</button>
+<button onclick="showTeacher('mohsen')">محسن ملکی (عربی)</button>
+<button onclick="showTeacher('ramin')">رامین عسگری (مطالعات اجتماعی)</button>
+<button onclick="showTeacher('hojat')">حجت رضادوست (علوم)</button>
+<button onclick="showTeacher('mahdiq')">مهدی قلیزاده (ورزش)</button>
+<button onclick="showTeacher('pouya')">پویا دفاعی مقدم (زبان انگلیسی)</button>
+<button onclick="showTeacher('sohrabi')">مهدی سهرابی (هدیه‌های آسمانی)</button>
+<button onclick="showTeacher('masib')">محمد رضا مسیب نژاد (تفکر و سبک زندگی)</button>
+<button onclick="showTeacher('partovi')">محمد رضا پرتوی (کار و فناوری)</button>
+<button onclick="showTeacher('kianoush')">کیانوش رفیعی (فرهنگ و هنر)</button>
+<button onclick="showTeacher('erfani')">علی عرفانی (نگارش)</button>
+<button onclick="showTeacher('shahriar')">شهریار باباپور (مدیر مدرسه)</button>
+<button onclick="showTeacher('ebratee')">مهدی عبرتی (قرآن)</button>
+</div>
+<div id="teacherContainer">
+
+    <div id="bardia" class="content">
+        <div class="teacher-title">برای جناب آقای بردیا دوستی (ریاضی)</div>
+        <div class="teacher-message">آموزگار ریاضی؛ مهربانی که اعداد را به زیبایی معنا می‌بخشد.</div>
+    </div>
+    
+    <div id="sadegh" class="content">
+        <div class="teacher-title">برای جناب آقای صادق ولی زاده (فارسی)</div>
+        <div class="teacher-message">معلمی که واژه‌ها را با عشق می‌چیند و شعر را زندگی می‌کند.</div>
+    </div>
+    
+    <div id="mohsen" class="content">
+        <div class="teacher-title">برای جناب آقای محسن ملکی (عربی)</div>
+        <div class="teacher-message">اللغة العربية، لغة القرآن، بين يديك تزدهر. <br> <b>ترجمه:</b> زبان عربی، زبان قرآن، به دستان شما شکوفا می‌شود.</div>
+    </div>
+    
+    <div id="ramin" class="content">
+        <div class="teacher-title">برای جناب آقای رامین عسگری (مطالعات اجتماعی)</div>
+        <div class="teacher-message">شما نقشه‌ای از فهم تاریخ و جامعه به ذهن ما بخشیدید.</div>
+    </div>
+    
+    <div id="hojat" class="content">
+        <div class="teacher-title">برای جناب آقای حجت رضادوست (علوم)</div>
+        <div class="teacher-message">جهان هستی را با دانش‌تان برایمان روشن کردید.</div>
+    </div>
+    
+    <div id="mahdiq" class="content">
+        <div class="teacher-title">برای جناب آقای مهدی قلیزاده (ورزش)</div>
+        <div class="teacher-message">با نشاط و حرکت، زندگی را آموختیم.</div>
+    </div>
+    
+    <div id="pouya" class="content">
+        <div class="teacher-title">برای جناب آقای پویا دفاعی مقدم (زبان انگلیسی)</div>
+        <div class="teacher-message">You opened the window to the world with English.</div>
+    </div>
+    
+    <div id="sohrabi" class="content">
+        <div class="teacher-title">برای جناب آقای مهدی سهرابی (هدیه‌های آسمانی)</div>
+        <div class="teacher-message">با کلامتان، نور ایمان را به قلب‌هایمان تاباندید.</div>
+    </div>
+    
+    <div id="masib" class="content">
+        <div class="teacher-title">برای جناب آقای محمد رضا مسیب نژاد (تفکر و سبک زندگی)</div>
+        <div class="teacher-message">تفکر درست و زندگی سالم را از شما آموختیم.</div>
+    </div>
+    
+    <div id="partovi" class="content">
+        <div class="teacher-title">برای جناب آقای محمد رضا پرتوی (کار و فناوری)</div>
+        <div class="teacher-message">دستان خلاق ما، از آموزش‌های عملی شما جان گرفت.</div>
+    </div>
+    
+    <div id="kianoush" class="content">
+        <div class="teacher-title">برای جناب آقای کیانوش رفیعی (فرهنگ و هنر)</div>
+        <div class="teacher-message">هنر را با دل، فرهنگ را با جان، از شما آموختیم.</div>
+    </div>
+    
+    <div id="erfani" class="content">
+        <div class="teacher-title">برای جناب آقای علی عرفانی (نگارش)</div>
+        <div class="teacher-message">نگارش را با واژه‌هایی از جنس عشق به ما آموختید.</div>
+    </div>
+    
+    <div id="shahriar" class="content">
+        <div class="teacher-title">برای جناب آقای شهریار باباپور (مدیر مدرسه)</div>
+        <div class="teacher-message">مدیری با درایت، مهربانی و پشتکار، برای ما همچون پدری.</div>
+    </div>
+    
+    <div id="ebratee" class="content">
+        <div class="teacher-title">برای جناب آقای مهدی عبرتی (قرآن)</div>
+        <div class="teacher-message">إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ <br> <b>ترجمه:</b> درود خداوند و فرشتگانش بر پیامبر باد.</div>
+    </div>
+    
+</div>
+<script>
+function showTeacher(id) {
+    document.querySelectorAll('.content').forEach(el => el.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+</script>
+</body>
+</html>
